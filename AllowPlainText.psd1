@@ -1,9 +1,13 @@
-# Configure all of the settings we want to apply for this configuration
+
+
 @{
     AllNodes = @(
         @{
-            NodeName = '*'
-            PSDscAllowPlainTextPassword = $true
+            NodeName = "*"
+            PSDscAllowDomainUser = $true
+            PsDscAllowPlainTextPassword = $true
+			RetryCount = 20
+            RetryIntervalSec = 30
         }
     )
 }
