@@ -3,7 +3,7 @@
 @{
     AllNodes = @(
         @{
-            NodeName = "*"
+            NodeName = "localhost"
             PSDscAllowDomainUser = $true
             PsDscAllowPlainTextPassword = $true
 			RetryCount = 20
